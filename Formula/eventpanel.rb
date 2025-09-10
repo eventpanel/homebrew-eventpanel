@@ -20,4 +20,4 @@ class Eventpanel < Formula
   test do
     system "#{bin}/eventpanel", "--version"
   end
-end 
+end

@@ -6,7 +6,7 @@ class Eventpanel < Formula
         "Accept: application/octet-stream",
         "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
       ]
-  sha256 "1d41366ca15b0ed46e28ba7b51ed41debec902bef7af0396eb493955e1c2d11c"
+  sha256 "bad51306ac3e49fb21a078ccfeda4946262404403dde5ad2cccddf80d7000af5"
   license "MIT"
 
   depends_on xcode: ["14.0", :build]

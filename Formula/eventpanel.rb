@@ -1,20 +1,14 @@
 class Eventpanel < Formula
   desc "EventPanel CLI tool"
   homepage "https://github.com/eventpanel/eventpanel-cli"
-  url "https://github.com/eventpanel/eventpanel-cli/archive/refs/tags/0.0.2.tar.gz",
-      headers: [
-        "Accept: application/octet-stream",
-        "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
-      ]
-  sha256 "bad51306ac3e49fb21a078ccfeda4946262404403dde5ad2cccddf80d7000af5"
+  url "https://github.com/eventpanel/eventpanel-cli/releases/download/v0.0.3/eventpanel-macos.tar.gz"
+  sha256 "0b42fca6b8944f3264432f643d81404a84be7afd92d7537bceb76ce766566121"
   license "MIT"
 
-  depends_on xcode: ["14.0", :build]
-  depends_on macos: :monterey
+  depends_on :macos
 
   def install
-    system "swift", "build", "--configuration", "release", "--disable-sandbox"
-    bin.install ".build/release/eventpanel"
+    bin.install "eventpanel-macos" => "eventpanel"
   end
 
   test do

@@ -2,7 +2,7 @@ class Eventpanel < Formula
   desc "EventPanel CLI tool"
   homepage "https://github.com/eventpanel/eventpanel-cli"
   url "https://github.com/eventpanel/eventpanel-cli/releases/download/v.0.0.5/eventpanel-macos.tar.gz"
-  sha256 "607b63b1c4e0d2219cbac6eb4d619aeee16777c7abe0f131726ef5d8383cc3d4"
+  sha256 "6dda260ca03a8cd7d89b05fa30559f44023a1f824f31a33ed07e24dd6e399321"
   license "MIT"
 
   depends_on :macos
